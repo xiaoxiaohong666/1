@@ -35,7 +35,6 @@ a:hover{
     .DomMatter{
         width:1080px;
         margin:0 auto;
-        border:1px solid #5a5a5a;
     }
     .logo{
         width:80px;
@@ -44,6 +43,7 @@ a:hover{
         width:1080px;
         margin:0 auto 10px auto;
         background:#fff;
+        border:1px solid #575554;
     }
 }
 @media screen and (min-width:1600px) and (max-width:1920px) {
@@ -162,7 +162,7 @@ a:hover{
 
 /*媒体TablePage部分开始*/
 .DomMatter{
-    /*border:2px solid #e8e8e8;*/
+    border:2px solid #e8e8e8;
 }
 .DomPageMatter{
     background:#fff;

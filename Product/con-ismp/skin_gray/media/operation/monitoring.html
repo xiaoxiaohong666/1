@@ -5,7 +5,7 @@
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <link rel="stylesheet" href="../../../css/blue/base/pagebody.css"/>
     <link rel="stylesheet" href="../../../css/blue/tree.css"/>
-    <link rel="stylesheet" href="../../../css/blue/base/main.css"/>
+    <link rel="stylesheet" href="../../../css/gray/base/main.css"/>
     <script src="../../../js/jquery-1.11.3.js"></script>
     <script src="../../../tool/My97DatePicker/WdatePicker.js"></script>
     <title>功能主页面</title>
@@ -13,7 +13,7 @@
 <style>
     .monitora{
         display:inline-block;
-        border:1px solid #2f73b9;
+        border:1px solid #4d4d4d;
         width:90px;
         height:30px;
         line-height:29px;
@@ -22,9 +22,6 @@
         text-align: center;
         background:#fff;
         border-bottom:none;
-    }
-    select{
-        width:90%;
     }
 </style>
 <script>
@@ -133,15 +130,12 @@
         menujson(2);
         var bigheight= $(window).height();
         $(".bigone,.bigtwo,.bigthree,.MonitorDetail").height(bigheight-35);
-        var date=new Date();
-      var nowtime = date.toLocaleDateString();
-        $(".nowtime").val(nowtime);
     })
 </script>
 <body>
 <div class="nav">
     <div class="allbtn">
-        <h2 class="buttonback" style="text-align:center;"><a href="../../login/welcome.html">返回主页</a></h2>
+        <h2 class="buttonback"><a href="#">回</a></h2>
         <ul style="width:190px" class="box">
             <!--<li>-->
                 <!--<div class='tx'><a href="#">报表中心</a> </div>-->
@@ -339,7 +333,7 @@
     <a name="a" class="monitora rf" onclick="show(4,this)">日流量流入</a>
 </div>
 <div>
-    <div id="d1" name="dv" class="bigone" style="display:block;margin:0 5px;border-top:1px solid #2f73b9;">
+    <div id="d1" name="dv" class="bigone" style="display:block;margin:0 5px;border-top:1px solid #4d4d4d;">
         <div  class="lf MonitorDetail" style="width:30%;">
             <div style="border-bottom:1px solid #2f73b9">
                 <table class="monitorname" border="1" cellspacing="0" cellpadding="0">
@@ -351,49 +345,21 @@
                             </select>
                         </td>
                         <td width="20%">日期</td>
-                        <td><input type="text" size="15"  class="Wdate nowtime" value="" onfocus="WdatePicker()"/></td>
+                        <td><input type="text" size="15"  class="Wdate" onfocus="WdatePicker()"/></td>
                     </tr>
                 </table>
                 <table class="monitorname" border="1" cellspacing="0" cellpadding="0">
                     <tr>
                         <td width="20%">客户名称</td>
-                        <td width="30%">
-                            <select name="">
-                                <option value="">宝马</option>
-                                <option value="">美咖</option>
-                                <option value="">芒果TV</option>
-                                <option value="">爱奇艺</option>
-                            </select>
-                        </td>
+                        <td width="30%"><input type="text" size="15"/></td>
                         <td width="20%">订单名称</td>
-                        <td>
-                            <select name="">
-                                <option value="">优土测试订单</option>
-                                <option value="">接口测试订单</option>
-                                <option value="">芒果vast3暂停测试</option>
-                                <option value="">PC视频对接</option>
-                            </select>
-                        </td>
+                        <td><input type="text" size="15"/></td>
                     </tr>
                     <tr>
                         <td>策略名称</td>
-                        <td>
-                            <select name="">
-                                <option value="">测试</option>
-                                <option value="">测试</option>
-                                <option value="">测试</option>
-                                <option value="">测试</option>
-                            </select>
-                        </td>
+                        <td><input type="text" size="15"/></td>
                         <td>广告位</td>
-                        <td>
-                            <select name="">
-                                <option value="">banner广告</option>
-                                <option value="">开屏广告</option>
-                                <option value="">视频广告</option>
-                                <option value="">插屏广告</option>
-                            </select>
-                        </td>
+                        <td><input type="text" size="15"/></td>
                     </tr>
                     <tr>
                         <td colspan="4"><button>查询</button></td>
@@ -486,55 +452,34 @@
             </div>
         </div>
     </div>
-    <div id="d2" name="dv" class="bigtwo" style="display:none;border:1px solid #2f73b9">我是黄色的div</div>
-    <div id="d3" name="dv" class="bigthree" style="display:none;border:1px solid #2f73b9;margin:0 5px;border-left:none;border-right:none;">
+    <div id="d2" name="dv" class="bigtwo" style="display:none;border:1px solid #4d4d4d">我是黄色的div</div>
+    <div id="d3" name="dv" class="bigthree" style="display:none;border:1px solid #4d4d4d;margin:0 5px;border-left:none;border-right:none;">
         <div  class="lf MonitorDetail" style="width:30%;">
             <div style="border-bottom:1px solid #2f73b9">
                 <table class="monitorname" border="1" cellspacing="0" cellpadding="0">
                     <tr>
                         <td width="20%">类型</td>
                         <td width="30%">
-                            <select name="">
+                            <select name="" id="">
                                 <option value="">正常数据</option>
                             </select>
                         </td>
                         <td width="20%">日期</td>
-                        <td><input type="text" size="15" class="Wdate nowtime" onfocus="WdatePicker()"/></td>
+                        <td><input type="text" size="15" class="Wdate" onfocus="WdatePicker()"/></td>
                     </tr>
                 </table>
                 <table class="monitorname" border="1" cellspacing="0" cellpadding="0">
                     <tr>
-                        <td width="20%">媒体名称</td>
-                        <td width="30%">
-                            <select name="">
-                                <option value="">暴风影音</option>
-                                <option value="">搜狐新闻</option>
-                                <option value="">网易</option>
-                                <option value="">腾讯</option>
-                            </select>
-                        </td>
-                        <td width="20%">应用名称</td>
-                        <td>
-                            <select name="">
-                                <option value="">Andriod-暴风影音</option>
-                                <option value="">Andriod-搜狐新闻</option>
-                                <option value="">Andriod-网易新闻</option>
-                                <option value="">Andriod-腾讯</option>
-                            </select>
-                        </td>
+                        <td width="20%">客户名称</td>
+                        <td width="30%"><input type="text" size="15"/></td>
+                        <td width="20%">订单名称</td>
+                        <td><input type="text" size="15"/></td>
                     </tr>
                     <tr>
+                        <td>策略名称</td>
+                        <td><input type="text" size="15"/></td>
                         <td>广告位</td>
-                        <td>
-                            <select name="">
-                                <option value="">Andriod-暴风影音-移动前贴片广告</option>
-                                <option value="">Andriod-搜狐视频-前贴片</option>
-                                <option value="">BMW-网易-Mobile</option>
-                                <option value="">Andriod-暴风影音-移动前贴片广告</option>
-                            </select>
-                        </td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="text" size="15"/></td>
                     </tr>
                     <tr>
                         <td colspan="4"><button>查询</button></td>
@@ -615,7 +560,7 @@
             </div>
         </div>
     </div>
-    <div id="d4" name="dv" class="bigthree" style=" width:100%;display:none;border:1px solid #2f73b9">我是绿色的div</div>
+    <div id="d4" name="dv" class="bigthree" style=" width:100%;display:none;border:1px solid #4d4d4d">我是绿色的div</div>
 </div>
 </body>
 <script>

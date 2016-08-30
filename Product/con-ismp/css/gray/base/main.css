@@ -43,7 +43,7 @@ a:hover{
 }
 .nav .allbtn h2 a{
     line-height:30px;
-    background-color:#0581fb;
+    background-color:#3d3d3d;
     padding-left:10px;
     display:block;
     font-family:微软雅黑, 黑体;
@@ -53,13 +53,13 @@ a:hover{
     font-weight:normal;
 }
 .nav .allbtn h2 a:hover{
-    background-color: #3175b8;
+    background-color: #dad0c8;
     text-decoration:none;
 }
 .nav .allbtn .box{
     z-index:99999;
     position:absolute;
-    background-color:#88d2f8;
+    background-color:#dddddd;
     width:190px;
     display:none;
     height:486px;
@@ -74,7 +74,7 @@ a:hover{
 }
 .nav .allbtn .box li .tx{
     line-height:35px;
-    background-color:#469df3;
+    background-color:#3d3d3d;
     padding-left:15px;
    height:35px;
 }
@@ -131,7 +131,7 @@ a:hover{
     color:#cd0606;
 }
 .MonitorDetail{
-    border:1px solid #2f73b9;
+    border:1px solid #4d4d4d;
     border-top:none;
 }
 .MD2{
@@ -140,11 +140,11 @@ a:hover{
 }
 .MonitorDetailRight{
     height:33%;
-    border-bottom:1px solid #2f73b9;
+    border-bottom:1px solid #4d4d4d;
 }
 .MonitorDetailMiddle{
     height:46%;
-    border-bottom:1px solid #2f73b9;
+    border-bottom:1px solid #4d4d4d;
 }
 .MonitorButton{
     width:100px;

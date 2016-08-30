@@ -100,21 +100,21 @@ function menujsonMedia(Numb){
     var cmenus = [
         {'id':'100','name':'报表中心','href':'#',
             'children':[
-                {"id":'102',"name":'媒体日数据','href':'media/appexternal/reportresday.html'},
-                {"id":'104',"name":'媒体实时数据','href':'media/appexternal/MediaRealtimeReports.html'},
-                {"id":'105',"name":'流量日数据','href':'media/appexternal/MediaRealtimeReports.html'},
-                {"id":'106',"name":'流量实时数据','href':'media/appexternal/MediaRealtimeReports.html'}
+                {"id":'102',"name":'媒体日数据','href':'media/appexternal/reportresday.html?name=Media'},
+                {"id":'104',"name":'媒体实时数据','href':'media/appexternal/MediaRealtimeReports.html?name=Media'},
+                {"id":'105',"name":'流量日数据','href':'media/appexternal/MediaRealtimeReports.html?name=Media'},
+                {"id":'106',"name":'流量实时数据','href':'media/appexternal/MediaRealtimeReports.html?name=Media'}
             ]},
         {"id":"200","name":"媒体管理","href":"#",
-            "children":[{"id":"201","name":"应用审核","href":"media/appaudit/page.html"},
-                {"id":"202","name":"ad采购报价","href":"media/appaudit/buyprice.html"},
-                {"id":"203","name":"ad销售报价","href":"media/appaudit/sellprice.html"},
-                {"id":"204","name":"ad对接留档","href":"media/appaudit/butt.html"},
-                {"id":"205","name":"应用管理","href":"media/appexternal/page.html"},
-                {"id":"206","name":"广告位管理","href":"media/appaudit/adpage.html"}]},
+            "children":[{"id":"201","name":"应用审核","href":"media/appaudit/page.html?name=Media"},
+                {"id":"202","name":"ad采购报价","href":"media/appaudit/buyprice.html?name=Media"},
+                {"id":"203","name":"ad销售报价","href":"media/appaudit/sellprice.html?name=Media"},
+                {"id":"204","name":"ad对接留档","href":"media/appaudit/butt.html?name=Media"},
+                {"id":"205","name":"应用管理","href":"media/appexternal/page.html?name=Media"},
+                {"id":"206","name":"广告位管理","href":"media/appaudit/adpage.html?name=Media"}]},
         {"id":"700","name":"平台用户","href":"#",
             "children":[
-                {"id":"602","name":"媒体用户","href":"media/userplatform/usermedia.html"}
+                {"id":"602","name":"媒体用户","href":"media/userplatform/usermedia.html?name=Media"}
             ]}
     ];
     var nav=$(".nav" );
@@ -146,19 +146,19 @@ function menujsonClient(Numb){
     var cmenus = [
         {'id':'100','name':'报表中心','href':'#',
             'children':[
-                {"id":'101',"name":'客户日数据','href':'media/appexternal/reportrecday.html'},
-                {"id":'103',"name":'客户实时数据','href':'media/appexternal/CustomersRealtimeReports.html'},
-                {"id":'105',"name":'流量日数据','href':'media/appexternal/MediaRealtimeReports.html'},
-                {"id":'106',"name":'流量实时数据','href':'media/appexternal/MediaRealtimeReports.html'}
+                {"id":'101',"name":'客户日数据','href':'media/appexternal/reportrecday.html?name=Client'},
+                {"id":'103',"name":'客户实时数据','href':'media/appexternal/CustomersRealtimeReports.html?name=Client'},
+                {"id":'105',"name":'流量日数据','href':'media/appexternal/MediaRealtimeReports.html?name=Client'},
+                {"id":'106',"name":'流量实时数据','href':'media/appexternal/MediaRealtimeReports.html?name=Client'}
             ]},
         {"id":"300","name":"客户管理","href":"#",
-            "children":[{"id":"301","name":"内部普通订单","href":"media/appinterior/internalorder.html"},
-                {"id":"302","name":"内部余量订单","href":"media/appinterior/remnantorder.html"},
-                {"id":"303","name":"客户订单","href":"media/appinterior/customerorder.html"}
+            "children":[{"id":"301","name":"内部普通订单","href":"media/appinterior/internalorder.html?name=Client"},
+                {"id":"302","name":"内部余量订单","href":"media/appinterior/remnantorder.html?name=Client"},
+                {"id":"303","name":"客户订单","href":"media/appinterior/customerorder.html?name=Client"}
                 ]},
         {"id":"700","name":"平台用户","href":"#",
             "children":[
-                {"id":"603","name":"客户管理","href":"media/userplatform/userclient.html"}
+                {"id":"603","name":"客户管理","href":"media/userplatform/userclient.html?name=Client"}
             ]}
     ];
     var nav=$(".nav" );
@@ -190,17 +190,20 @@ function menujsonRun(Numb){
     var cmenus = [
         {'id':'100','name':'报表中心','href':'#',
             'children':[
-                {"id":'101',"name":'客户日数据','href':'media/appexternal/reportrecday.html'},
-                {"id":'102',"name":'媒体日数据','href':'media/appexternal/reportresday.html'},
-                {"id":'103',"name":'客户实时数据','href':'media/appexternal/CustomersRealtimeReports.html'},
-                {"id":'104',"name":'媒体实时数据','href':'media/appexternal/MediaRealtimeReports.html'},
-                {"id":'105',"name":'流量日数据','href':'media/appexternal/MediaRealtimeReports.html'},
-                {"id":'106',"name":'流量实时数据','href':'media/appexternal/MediaRealtimeReports.html'}
+                {"id":'101',"name":'客户日数据','href':'media/appexternal/reportrecday.html?name=Run'},
+                {"id":'102',"name":'媒体日数据','href':'media/appexternal/reportresday.html?name=Run'},
+                {"id":'103',"name":'客户实时数据','href':'media/appexternal/CustomersRealtimeReports.html?name=Run'},
+                {"id":'104',"name":'媒体实时数据','href':'media/appexternal/MediaRealtimeReports.html?name=Run'},
+                {"id":'105',"name":'流量日数据','href':'media/appexternal/MediaRealtimeReports.html?name=Run'},
+                {"id":'106',"name":'流量实时数据','href':'media/appexternal/MediaRealtimeReports.html?name=Run'}
             ]},
-        {"id":"400","name":"运维监控","href":"#",
-            "children":[{"id":"401","name":"超级监控","href":"#"},
-                {"id":"402","name":"策略监控","href":"#"},
-                {"id":"403","name":"日监控","href":'#'}]}
+        {"id":"400","name":"运营中心","href":"#",
+            "children":[{"id":"401","name":"监控","href":"media/operation/monitoring.html?name=Run"},
+                {"id":"402","name":"PMP多维报表","href":"#"},
+                {"id":"403","name":"SSP多维报表","href":'#'},
+                {"id":"403","name":"运营流量报表","href":'#'},
+                {"id":"403","name":"运营UV报表","href":'#'}
+            ]}
     ];
     var nav=$(".nav" );
 
